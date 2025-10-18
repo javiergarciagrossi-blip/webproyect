@@ -133,6 +133,19 @@ width:0;
 animation: typing 2.8s steps(30, end) forwards, caret .8s step-end infinite;
 }
 
+.style_webtelkom{
+  display: inline-block;
+  padding: .6rem 1.1rem;
+  border-radius: 999px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(90deg, #d44d4d, #fffd95, #ff7e7e);
+  color: #0f0f10;
+  font-weight: 700;
+  transition: transform .2s ease, box-shadow .2s ease;
+  box-shadow: 0 6px 20px rgba(0,0,0,.3);
+}
+
 @keyframes typing{ to{ width:100%; } }
 @keyframes caret{ 50%{ border-color: transparent; } }
 
@@ -625,5 +638,372 @@ height: auto;
 border: 1px solid #ccc;
 }
 
+/* Segunda página */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap');
+
+.site--lore {
+  position: relative;
+  padding: 2.2rem 2rem;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,.06);
+  background: linear-gradient(180deg, rgba(60,60,70,.45), rgba(25,25,30,.9));
+  box-shadow: 0 10px 28px rgba(0,0,0,.3);
+  overflow: hidden;
+  font-family: 'Poppins', system-ui, sans-serif;
+}
+
+/* Degradado superior violeta-magenta */
+.site--lore::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(90deg, #8c52ff, #ff65c2, #8bd7ff);
+  opacity: .7;
+  pointer-events: none;
+}
+
+/* Cabecera */
+.lore-head {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.lore-head h2 {
+  font-weight: 700;
+  font-size: clamp(1.5rem, 2.8vw, 2rem);
+  color: #f2f3f6;
+  margin: 0 0 .4rem;
+}
+.lore-head .lead {
+  color: #c2c4cb;
+  font-weight: 500;
+  font-size: 1.05rem;
+  margin-bottom: .5rem;
+}
+.lore-head .intro {
+  color: #b2b4bb;
+  max-width: 70ch;
+  margin: 0 auto 1rem;
+  line-height: 1.6;
+}
+
+/* Botón CTA */
+.lore-cta {
+  display: inline-block;
+  padding: .6rem 1.1rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #b07aff, #ff7cd6, #7ec8ff);
+  color: #0f0f10;
+  font-weight: 700;
+  transition: transform .2s ease, box-shadow .2s ease;
+  box-shadow: 0 6px 20px rgba(0,0,0,.3);
+}
+.lore-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(0,0,0,.35);
+}
+
+/* Imagen principal */
+.lore-hero {
+  margin: 1rem 0 1.2rem;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.08);
+  background: #121217;
+  box-shadow: 0 10px 24px rgba(0,0,0,.25);
+}
+.lore-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  filter: saturate(.98) contrast(1.05);
+}
+.lore-hero figcaption {
+  font-size: .9rem;
+  color: #cfd1d8;
+  text-align: center;
+  padding: .6rem .8rem;
+  border-top: 1px solid rgba(255,255,255,.05);
+}
+
+/* Texto de análisis */
+.lore-columns {
+  margin-top: 1.2rem;
+  color: #d4d5da;
+  font-size: .97rem;
+  line-height: 1.65;
+}
+.lore-columns p strong {
+  color: #ff7cd6;
+}
+@media (min-width: 920px) {
+  .lore-columns { columns: 2; column-gap: 2rem; }
+}
+
+/* Grid de capturas */
+.lore-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.lore-grid figure {
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.08);
+  background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+  overflow: hidden;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.lore-grid figure:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255,255,255,.12);
+  box-shadow: 0 12px 28px rgba(0,0,0,.28);
+}
+.lore-grid figcaption {
+  font-size: .9rem;
+  color: #c9ccd3;
+  padding: .6rem .8rem;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,.05);
+}
+
+/* Conclusión */
+#site-2 .conclusion {
+  background: rgba(40,40,45,.55);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 14px;
+  margin-top: 1.5rem;
+  padding: 1.2rem 1.4rem;
+  color: #e8e9ed;
+  line-height: 1.6;
+}
+
+/* 3 pagina web */
+
+.site--sofaknows{
+  position: relative;
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,.08);
+  background:
+    radial-gradient(900px 420px at 10% -10%, rgba(255,255,255,.05), transparent 60%),
+    radial-gradient(800px 420px at 110% 10%, rgba(255,255,255,.03), transparent 55%),
+    linear-gradient(180deg, rgba(22,22,24,.97), rgba(16,16,18,.98));
+  box-shadow: 0 12px 28px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.04);
+  overflow: hidden;
+  font-family: 'Poppins', system-ui, sans-serif;
+}
+
+/* Franja superior sutil */
+.site--sofaknows::before{
+  content:""; position:absolute; inset:0 0 auto 0; height:3px;
+  background: linear-gradient(90deg, #ffffff, rgba(255,255,255,.25), #ffffff);
+  opacity:.18; pointer-events:none;
+}
+
+/* 2) Cabecera / títulos / CTA */
+.sofaknows-head{ text-align:center; margin-bottom: 1.2rem; }
+
+.sk-title{
+  margin:0; line-height:.92;
+  font-weight: 800; letter-spacing:.06em;
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  text-transform: uppercase; color:#f6f7f9;
+}
+.sk-title span{ display:inline-block; transform: scaleX(1.06); }
+.sk-title:hover{
+  text-shadow: -1px 0 rgba(255,255,255,.22), 1px 0 rgba(255,255,255,.16);
+}
+
+.sk-kicker{
+  margin:.4rem 0 .45rem; color:#c0c4cc;
+  font-weight:600; letter-spacing:.04em;
+}
+
+.site--sofaknows .lead{
+  color:#acb1ba; max-width: 70ch; margin:0 auto .8rem;
+}
+
+.sk-cta{
+  display:inline-block; margin-top:.25rem;
+  padding:.6rem 1rem; border-radius: 10px;
+  background:#f6f7f9; color:#0f0f10;
+  font-weight:800; letter-spacing:.03em;
+  box-shadow: 0 8px 20px rgba(0,0,0,.35);
+  transition: transform .15s ease, filter .15s ease;
+}
+.sk-cta:hover{ transform: translateY(-1px); filter: contrast(1.06); }
+
+/* 3) Hero / vitrina */
+.sk-hero{
+  margin: 1rem 0; border-radius: 14px; overflow: hidden;
+  border:1px solid rgba(255,255,255,.08); background:#0d0e12;
+  box-shadow: 0 10px 24px rgba(0,0,0,.28);
+}
+.sk-hero img{
+  display:block; width:100%; height:auto; aspect-ratio:16/9; object-fit: cover;
+  filter: contrast(1.06) saturate(.92);
+}
+.sk-hero figcaption{
+  font-size:.9rem; color:#cfd3db; text-align:center;
+  padding:.6rem .8rem; border-top:1px solid rgba(255,255,255,.06);
+}
+
+/* 4) Texto de análisis (columnas) */
+.sk-columns{
+  margin-top: 1rem; color:#d3d6dc;
+  font-size:.98rem; line-height:1.65;
+}
+.sk-columns p strong{ color:#f6f7f9; }
+@media (min-width: 920px){
+  .sk-columns{ columns: 2; column-gap: 2rem; }
+}
+
+/* 5) Grid de capturas */
+.sk-grid{
+  display:grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap: 1rem; margin-top: 1.1rem;
+}
+.sk-grid figure{
+  border-radius:12px; overflow:hidden;
+  border:1px solid rgba(255,255,255,.08);
+  background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+  transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease, filter .16s ease;
+}
+.sk-grid figure:hover{
+  transform: translateY(-2px);
+  border-color: rgba(255,255,255,.14);
+  box-shadow: 0 12px 28px rgba(0,0,0,.3);
+  filter: contrast(1.05);
+}
+.sk-grid figcaption{
+  font-size:.9rem; color:#c7cbd3; text-align:center;
+  padding:.55rem .75rem; border-top:1px solid rgba(255,255,255,.06);
+}
+
+/* 6) Conclusión */
+#site-3 .conclusion{
+  background: rgba(38,38,42,.55);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 14px;
+  margin-top: 1.2rem;
+  padding: 1.1rem 1.3rem;
+  color: #e9ebef; line-height: 1.6;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.05);
+}
 
 
+/*pagina 4*/
+
+
+@media (min-width: 1000px){
+  .sk-hero img{ aspect-ratio: 21/9; }
+}
+
+.site--trinity{
+  position: relative;
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,.08);
+  background:
+    radial-gradient(1100px 520px at 8% -8%, rgba(180,255,245,.08), transparent 60%),
+    radial-gradient(1100px 520px at 108% 8%, rgba(140,240,255,.06), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+  box-shadow: 0 12px 28px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.05);
+  overflow: hidden;
+  font-family: 'Poppins', system-ui, sans-serif;
+}
+
+/* Franja superior (acento teal) */
+.site--trinity::before{
+  content:""; position:absolute; inset:0 0 auto 0; height:3px;
+  background: linear-gradient(90deg, #7ae9da, #59d3ff, #7ae9da);
+  opacity:.7; pointer-events:none;
+}
+
+/* 2) Cabecera / CTA */
+.trinity-head{ text-align:center; margin-bottom: 1.2rem; }
+.tr-title{
+  margin:0; font-weight:700; letter-spacing:.25px;
+  font-size: clamp(1.5rem, 2.6vw, 2rem); color:#f2f4f6;
+}
+.site--trinity .lead{
+  color:#bcc1c9; max-width: 72ch; margin:.45rem auto .8rem; line-height:1.6;
+}
+.tr-cta{
+  display:inline-block; margin-top:.2rem;
+  padding:.55rem 1.05rem; border-radius: 12px;
+  background: linear-gradient(90deg, #84f1e3, #66dcff);
+  color:#0f1114; font-weight:700;
+  box-shadow: 0 8px 22px rgba(0,0,0,.3);
+  transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+}
+.tr-cta:hover{ transform: translateY(-1px); filter: saturate(1.05); box-shadow: 0 12px 30px rgba(0,0,0,.34); }
+
+/* 3) Hero / vitrina */
+.tr-hero{
+  margin: 1rem 0; border-radius: 16px; overflow: hidden;
+  border:1px solid rgba(255,255,255,.08);
+  background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015));
+  box-shadow: 0 10px 24px rgba(0,0,0,.26);
+}
+.tr-hero img{
+  display:block; width:100%; height:auto; aspect-ratio:16/9; object-fit: cover;
+  filter: contrast(1.02) saturate(.98);
+}
+.tr-hero figcaption{
+  font-size:.9rem; color:#cdd2db; text-align:center;
+  padding:.6rem .8rem; border-top:1px solid rgba(255,255,255,.06);
+}
+
+/* 4) Texto (columnas) */
+.tr-columns{
+  margin-top: 1.1rem; color:#d6d9df; font-size:.98rem; line-height:1.65;
+}
+.tr-columns p strong{ color:#9feae0; }
+@media (min-width: 920px){
+  .tr-columns{ columns: 2; column-gap: 2rem; }
+}
+
+/* 5) Grid de capturas */
+.tr-grid{
+  display:grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap: 1rem; margin-top: 1.1rem;
+}
+.tr-grid figure{
+  border-radius:14px; overflow:hidden;
+  border:1px solid rgba(255,255,255,.08);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01)),
+    radial-gradient(260px 160px at 20% 10%, rgba(130,240,230,.09), transparent 60%);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, filter .18s ease;
+}
+.tr-grid figure:hover{
+  transform: translateY(-2px);
+  border-color: rgba(255,255,255,.13);
+  box-shadow: 0 12px 26px rgba(0,0,0,.28);
+  filter: contrast(1.04);
+}
+.tr-grid figcaption{
+  font-size:.9rem; color:#c8cdd5; text-align:center;
+  padding:.55rem .75rem; border-top:1px solid rgba(255,255,255,.06);
+}
+
+/* 6) Conclusión */
+#site-4 .conclusion{
+  background: rgba(48,52,58,.55);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 14px;
+  margin-top: 1.2rem;
+  padding: 1.1rem 1.3rem;
+  color: #e9edf1; line-height: 1.6;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.05);
+}
+
+/* 7) Responsive fino */
+@media (min-width: 1000px){
+  .tr-hero img{ aspect-ratio: 21/9; }
+}
